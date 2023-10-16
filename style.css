@@ -98,8 +98,8 @@ h2{
 }
 
 .skill img {
-    max-width: 150px;
-    border-radius: 100%;
+    max-width: 75px;
+    border-radius: 150%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
