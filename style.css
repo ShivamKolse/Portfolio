@@ -1,12 +1,16 @@
 body {
-    margin: 0;
+    margin: 10px;
     padding: 0;
-    background:linear-gradient(to bottom,  #0078D4, #FFA500);
+   /* background:linear-gradient(to bottom,  #0078D4, #FFA500);*/
     font-size: large;
+    background-image: url(Custom-Software-Development.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
-    background-color: #ffffff;
+    background-color:rgba(255, 255, 255, 0.622);
+    
 
     color:black;
     text-align: center;
@@ -21,7 +25,7 @@ header {
 }
 
 .section {
-    background-color: #fff;
+    background-color:rgba(255, 255, 255, 0.622);
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
@@ -33,7 +37,7 @@ header {
 }
 
 .section.active {
-    background-color: #f0f0f0;
+    background-color:rgba(255, 255, 255, 0.622);
     transform: translateX(0);
     opacity: 1;
 }
