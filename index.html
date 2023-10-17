@@ -6,154 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivam Kolse</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./Images/Shivam.jpg" type="/icon">
 </head>
 
 <body>
-    <div id="wrapper">
-        <header>
-            <div class="container">
-                <h1>Shivam Ravindra Kolse</h1>
-                <p><h2>Web Developer & Designer, Android Developer</p>
-            </div>
-        </header>
+    <header>
         <div class="container">
-            <div id="introduction" class="section animated">
-                <h2>Shivam's Creative Journey:</h2>
-    
-                <p>Welcome to my creative corner! I'm Shivam Ravindra Kolse, and I'm on a mission to bring ideas to life. As a
-                    dedicated Software Developer and Designer, I've poured my heart and soul into every project you'll find
-                    here.
-    
-                    This portfolio is a reflection of my passion for Software/Web Development. It's not just about the end
-                    result; it's about the process, the inspiration, and the continuous evolution of my craft. Each piece is a
-                    chapter in my creative journey, and I'm excited to have you along for the ride.
-    
-                    Feel free to explore my work, find inspiration, or reach out to discuss new opportunities. Creativity knows
-                    no bounds, and I'm always eager to collaborate on exciting projects. Thanks for visiting, and I hope you
-                    enjoy the experience.</p>
-                <div class="image-container">
-                    <img class="image" src="      .\Images\Shivam.jpg" alt="Your Name">
-                </div>
-            </div>
-            <div id="skills" class="section skills animated left">
-                <h2>Skills</h2>
-                <div class="skill">
-                    <img src=".\Images\html5-logo.png" alt="HTML5">
-                    <br>
-                    <span>HTML5</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\css3-logo.png" alt="CSS3">
-                    <br>
-                    <span>CSS3</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\mongo-logo.png" alt="MongoDb">
-                    <br>
-                    <span>MongoDB</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\android-logo.png" alt="Android Studio">
-                    <br>
-                    <span>Android</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\java-logo.png" alt="Java">
-                    <br>
-                    <span>Java</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\python-logo.png" alt="Python">
-                    <br>
-                    <span>Python</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\figma-logo.png" alt="Figma">
-                    <br>
-                    <span>Figma</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\bootstrap-logo.png" alt="Bootstrap">
-                    <br>
-                    <span>Bootstrap</span>
-                </div>
-                <div class="skill">
-                    <img src="./Images\react-logo.png" alt="React">
-                    <br>
-                    <span>ReactJs</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\node-logo.png" alt="NodeJs">
-                    <br>
-                    <span>Node</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\tailwind-logo.png" alt="Tailwind">
-                    <br>
-                    <span>Tailwind</span>
-                </div>
-                <div class="skill">
-                    <img src=".\Images\Salesforce.png" alt="Salesforce">
-                    <br>
-                    <span>Salesforce</span>
-                </div>
-            </div>
-            <div id="projects" class="section projects animated right">
-                <h2>Projects</h2>
-                <p><h2><i>1.Android app development</i></h2></p>
-                    <p>Developing an android App Which will help manage a clients finance organization,Mordenize Loan Providing Process,Help Track Employee Performance,etc.</h3></p>
-                    <p><h2><i>2.Movie Review website</i></h2></p>
-                        <p>Developed a basic Front end for a Movie Review website using Html and CSS</p>
-                        <p>To visit this website <a href="https://shivamkolse.github.io/Review/">Click Here </a></p>
-                    <p><h2><i>3.Travelling Agency Website</i></h2></p>
-                        <p>Created a basic Front end for a Travelling Agency website using Html</p>
-                        <p><h2><i>4.Botique Management System</i></h2></p>
-                            <p>Developed a Botique Management System which will help track data about,Inventory management,Order details,Customer details,Courier Service deatils,etc.Using Python and MySQL </p>
-    
-                        <br>
-            </div>
-            <div id="Certification" class="section hobbies animated left">
-                <h2>Certification</h2>
-                <h2>1.Internshala Full Stack Web Development Certification</h2>
-                <p>Currently Pursuing Internshala FullStack Web Development certification powered by Skill India,Where I will be learning all the essential skills to be a successfull web developer like.HTML,CSS,JavaScript,NodeJs,Bootstrap,MongoDB,MySQL,ReactJs,ExpressJs </b></p>
-            </div>
-            <div id="interest" class="section interest animated right">
-                <h2>Interest</h2>
-                <p>Your interests and activities go here.</p>
-            </div>
-            
+            <h1>Shivam Ravindra Kolse</h1>
+            <p><h2>Web Developer & Designer, Android Developer</p>
         </div>
-    
-        <script>
-            const sections = document.querySelectorAll('.section');
-            let slideRight = true;
-    
-            function checkSections() {
-                sections.forEach((section, index) => {
-                    const sectionTop = section.getBoundingClientRect().top;
-                    const sectionBottom = section.getBoundingClientRect().bottom;
-                    const isAboveViewport = sectionTop > window.innerHeight;
-                    const isBelowViewport = sectionBottom < 0;
-    
-                    if (!isAboveViewport && !isBelowViewport) {
-                        section.classList.add('active');
-                        section.classList.remove(slideRight ? 'left' : 'right');
-                        slideRight = !slideRight;
-                    } else {
-                        section.classList.remove('active');
-                        section.classList.add(slideRight ? 'right' : 'left');
-                    }
-                });
-            }
-    
-            window.addEventListener('scroll', checkSections);
-            window.addEventListener('resize', checkSections);
-    
-            checkSections();
-        </script>
+    </header>
+    <div class="container">
+        <div id="introduction" class="section animated">
+            <h2>Shivam's Creative Journey:</h2>
+
+            <p>Welcome to my creative corner! I'm Shivam Ravindra Kolse, and I'm on a mission to bring ideas to life. As a
+                dedicated Software Developer and Designer, I've poured my heart and soul into every project you'll find
+                here.
+
+                This portfolio is a reflection of my passion for Software/Web Development. It's not just about the end
+                result; it's about the process, the inspiration, and the continuous evolution of my craft. Each piece is a
+                chapter in my creative journey, and I'm excited to have you along for the ride.
+
+                Feel free to explore my work, find inspiration, or reach out to discuss new opportunities. Creativity knows
+                no bounds, and I'm always eager to collaborate on exciting projects. Thanks for visiting, and I hope you
+                enjoy the experience.</p>
+            <div class="image-container">
+                <img class="image" src="Shivam.jpg" alt="Your Name">
+            </div>
+        </div>
+        <div id="skills" class="section skills animated left">
+            <h2>Skills</h2>
+            <div class="skill">
+                <img src="html5-logo.png" alt="HTML5">
+                <br>
+                <span>HTML5</span>
+            </div>
+            <div class="skill">
+                <img src="css3-logo.png" alt="CSS3">
+                <br>
+                <span>CSS3</span>
+            </div>
+            <div class="skill">
+                <img src="mongo-logo.png" alt="MongoDb">
+                <br>
+                <span>MongoDB</span>
+            </div>
+            <div class="skill">
+                <img src="android-logo.png" alt="Android Studio">
+                <br>
+                <span>Android</span>
+            </div>
+            <div class="skill">
+                <img src="java-logo.png" alt="Java">
+                <br>
+                <span>Java</span>
+            </div>
+            <div class="skill">
+                <img src="python-logo.png" alt="Python">
+                <br>
+                <span>Python</span>
+            </div>
+            <div class="skill">
+                <img src="figma-logo.png" alt="Figma">
+                <br>
+                <span>Figma</span>
+            </div>
+            <div class="skill">
+                <img src="bootstrap-logo.png" alt="Bootstrap">
+                <br>
+                <span>Bootstrap</span>
+            </div>
+            <div class="skill">
+                <img src="react-logo.png" alt="React">
+                <br>
+                <span>ReactJs</span>
+            </div>
+            <div class="skill">
+                <img src="node-logo.png" alt="NodeJs">
+                <br>
+                <span>Node</span>
+            </div>
+            <div class="skill">
+                <img src="tailwind-logo.png" alt="Tailwind">
+                <br>
+                <span>Tailwind</span>
+            </div>
+            <div class="skill">
+                <img src="salesforce-logo.png" alt="Salesforce">
+                <br>
+                <span>Salesforce</span>
+            </div>
+        </div>
+        <div id="projects" class="section projects animated right">
+            <h2>Projects</h2>
+            <p><h2><i>1.Android app development</i></h2></p>
+                <p>Developing an android App Which will help manage a clients finance organization,Mordenize Loan Providing Process,Help Track Employee Performance,etc.</h3></p>
+                <p><h2><i>2.Movie Review website</i></h2></p>
+                    <p>Developed a basic Front end for a Movie Review website using Html and CSS</p>
+                    <p>To visit this website <a href="https://shivamkolse.github.io/Review/">Click Here </a></p>
+                <p><h2><i>3.Travelling Agency Website</i></h2></p>
+                    <p>Created a basic Front end for a Travelling Agency website using Html</p>
+                    <p><h2><i>4.Botique Management System</i></h2></p>
+                        <p>Developed a Botique Management System which will help track data about,Inventory management,Order details,Customer details,Courier Service deatils,etc.Using Python and MySQL </p>
+
+                    <br>
+        </div>
+        <div id="Certification" class="section hobbies animated left">
+            <h2>Certification</h2>
+            <h2>1.Internshala Full Stack Web Development Certification</h2>
+            <p>Currently Pursuing Internshala FullStack Web Development certification powered by Skill India,Where I will be learning all the essential skills to be a successfull web developer like.HTML,CSS,JavaScript,NodeJs,Bootstrap,MongoDB,MySQL,ReactJs,ExpressJs </b></p>
+        </div>
+        <div id="interest" class="section interest animated right">
+            <h2>Interest</h2>
+            <p>Your interests and activities go here.</p>
+        </div>
+        
     </div>
-    
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        let slideRight = true;
+
+        function checkSections() {
+            sections.forEach((section, index) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                const isAboveViewport = sectionTop > window.innerHeight;
+                const isBelowViewport = sectionBottom < 0;
+
+                if (!isAboveViewport && !isBelowViewport) {
+                    section.classList.add('active');
+                    section.classList.remove(slideRight ? 'left' : 'right');
+                    slideRight = !slideRight;
+                } else {
+                    section.classList.remove('active');
+                    section.classList.add(slideRight ? 'right' : 'left');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkSections);
+        window.addEventListener('resize', checkSections);
+
+        checkSections();
+    </script>
 </body>
 
 </html>
